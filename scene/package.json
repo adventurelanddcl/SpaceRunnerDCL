@@ -1,0 +1,30 @@
+{
+  "name": "Space Runner",
+  "version": "1.0.0",
+  "description": "Space Runner",
+  "scripts": {
+    "start": "sdk-commands start",
+    "deploy": "sdk-commands deploy",
+    "build": "sdk-commands build",
+    "server-logs": "sdk-commands sdk-server-logs"
+  },
+  "//sdk-pin": "PINNED EXACTLY (no caret) — only three @dcl/sdk builds ship the auth-server APIs: 7.24.2-27769863035.commit-2ed854e, 7.24.6-29505165911.commit-d270434 and 7.25.1-30310486734.commit-5ffe873 (the @auth-server tag). They are NOT interchangeable: 7.24.2 worked on mobile but not desktop, 7.25.1 the reverse. Never switch build without testing on BOTH a phone and a desktop. See MIGRATION.md.",
+  "devDependencies": {
+    "@dcl/asset-packs": "latest",
+    "@dcl/js-runtime": "7.24.6-29505165911.commit-d270434",
+    "@dcl/sdk": "7.24.6-29505165911.commit-d270434"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=6.0.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 120,
+    "trailingComma": "none"
+  },
+  "dependencies": {
+    "@dcl-sdk/utils": "^1.1.1"
+  }
+}

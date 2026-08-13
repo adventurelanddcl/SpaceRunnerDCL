@@ -1,0 +1,13 @@
+package-lock.json
+*.js
+node_modules
+bin/
+.DS_Store
+**/.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Build artifact — regenerated from assets/scene/main.composite on every build.
+# Never commit it: a stale copy from an older scene version is a documented
+# cause of CRDT sync problems (the reference project ignores it the same way).
+*.crdt
